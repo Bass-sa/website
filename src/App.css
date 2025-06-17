@@ -1,12 +1,14 @@
 :root {
-  --primary-color: #60a5fa;
-  --secondary-color: #93c5fd;
-  --text-color: #1f2937;
-  --light-bg: #f3f4f6;
-  --white: #ffffff;
-  --gray-800: #1f2937;
-  --gray-100: #f3f4f6;
-  --semi-dark-gray: #374151;
+  --primary-color: #58C234;
+  --primary-color-dark: #335428;
+  --secondary-color: #F450DA;
+  --secondary-color-dark: #B83AA4;
+  --background-color: #000000;
+  --text-color: #ffffff;
+  --link: hsla(0, 0%, 63%, 1);
+  --link-hover:  #FFFFFF;
+  --card-background: #1a1a1a;
+  --card-background-2: #2a2a2a;
 }
 
 * {
@@ -19,7 +21,7 @@ body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
   line-height: 1.6;
   color: var(--text-color);
-  background-color: var(--white);
+  background-color: var(--background-color);
 }
 
 .app {
@@ -56,8 +58,8 @@ body {
 }
 
 .cta-button {
-  background-color: var(--white);
-  color: var(--primary-color);
+  background-color: var(--background-color);
+  color: var(--link);
   border: none;
   padding: 1rem 2rem;
   font-size: 1.1rem;
@@ -69,11 +71,12 @@ body {
 
 .cta-button:hover {
   transform: translateY(-2px);
+  color: var(--link-hover);
 }
 
 .customers {
   padding: 4rem 2rem;
-  background-color: var(--white);
+  background-color: var(--background-color);
   width: 100vw;
   left: 0;
   position: relative;
@@ -97,7 +100,7 @@ body {
 }
 
 .customer-card {
-  background: var(--gray-100);
+  background: var(--card-background);
   padding: 2rem;
   border-radius: 0.5rem;
   text-align: center;
@@ -105,7 +108,7 @@ body {
 
 
 .header {
-  background-color: var(--white); /* Or your preferred header background */
+  background-color: var(--background-color); /* Or your preferred header background */
   padding: 1rem 2rem; /* Add some internal spacing */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
 }
@@ -121,7 +124,7 @@ nav {
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
-  color: var(--gray-800); /* Style your logo text */
+  color: var(--text-color); /* Style your logo text */
 }
 
 .nav-links {
@@ -132,13 +135,13 @@ nav {
 
 .nav-links li a {
   text-decoration: none; /* Remove underline from links */
-  color: var(--semi-dark-gray); /* Style link color */
+  color: var(--link); /* Style link color */
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
 .nav-links li a:hover {
-  color: var(--primary-color); /* Change color on hover */
+  color: var(--link-hover); /* Change color on hover */
 }
 
 
@@ -146,7 +149,7 @@ nav {
 
 .projects {
   padding: 4rem 2rem; /* Add padding above and below the section */
-  background-color: var(--light-bg); /* Use a light background color for contrast */
+  background-color: var(--background-color); /* Use a light background color for contrast */
   width: 100vw; /* Ensure it spans the full viewport width */
   left: 0;
   position: relative; /* Needed because you used left/position on other sections */
@@ -170,8 +173,8 @@ nav {
 }
 
 .project-card {
-  background: var(--white); /* White background for cards */
-  padding: 2rem; /* Add padding inside each card */
+  background: var(--card-background); /* White background for cards */
+  padding: 2rem; /*  padding inside each card */
   border-radius: 0.5rem; /* Rounded corners for cards */
   text-align: left; /* Align text to the left (or center if preferred) */
   box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Optional: Add a subtle shadow for depth */
@@ -180,18 +183,18 @@ nav {
 .project-card h3 {
     margin-bottom: 0.8rem; /* Space below the project title in the card */
     font-size: 1.25rem;
-    color: var(--gray-800); /* Style heading color */
+    color: var(--text-color); /* Style heading color */
 }
 
 .project-card p {
-    color: var(--semi-dark-gray); /* Style paragraph color */
+    color: var(--link); /* Style paragraph color */
 }
 
 
 
 .footer {
-  background-color: var(--gray-800); /* Dark background */
-  color: var(--gray-100); /* Light text color */
+  background-color: var(--card-background); /* Dark background */
+  color: var(--text-color); /* Light text color */
   padding: 4rem 2rem 2rem; /* Top, horizontal, and bottom padding */
   font-size: 0.9rem;
 }
@@ -212,7 +215,7 @@ nav {
 }
 
 .footer-section h4 {
-  color: var(--white); /* Starker color for headings */
+  color: var(--text-color); /* Starker color for headings */
   margin-bottom: 1rem;
   font-size: 1.1rem;
 }
@@ -227,21 +230,21 @@ nav {
 }
 
 .social-links a {
-  color: var(--gray-100); /* Link color */
+  color: var(--link); /* Link color */
   text-decoration: none; /* Remove underline */
   transition: color 0.3s ease; /* Smooth color transition on hover */
 }
 
 .social-links a:hover {
-  color: var(--primary-color); /* Highlight color on hover */
+  color: var(--link-hover); /* Highlight color on hover */
 }
 
 .footer-bottom {
   text-align: center;
   padding-top: 1.5rem;
-  border-top: 1px solid var(--semi-dark-gray); /* Separator line */
+  border-top: 1px solid var(--background-color); /* Separator line */
   font-size: 0.8rem;
-  color: var(--gray-100); /* Match text color */
+  color: var(--text); /* Match text color */
 }
 
 
