@@ -103,6 +103,149 @@ body {
   text-align: center;
 }
 
+
+.header {
+  background-color: var(--white); /* Or your preferred header background */
+  padding: 1rem 2rem; /* Add some internal spacing */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+nav {
+  display: flex; /* Arrange children (logo and nav-links) horizontally */
+  justify-content: space-between; /* Put space between logo and nav-links */
+  align-items: center; /* Vertically center the logo and nav-links */
+  max-width: 1200px; /* Optional: Limit max width and center */
+  margin: 0 auto; /* Center the nav container */
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--gray-800); /* Style your logo text */
+}
+
+.nav-links {
+  list-style: none; /* Remove bullet points from the list */
+  display: flex; /* Arrange list items horizontally */
+  gap: 1.5rem; /* Add space between list items */
+}
+
+.nav-links li a {
+  text-decoration: none; /* Remove underline from links */
+  color: var(--semi-dark-gray); /* Style link color */
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: var(--primary-color); /* Change color on hover */
+}
+
+
+/* Add these styles to your App.css file */
+
+.projects {
+  padding: 4rem 2rem; /* Add padding above and below the section */
+  background-color: var(--light-bg); /* Use a light background color for contrast */
+  width: 100vw; /* Ensure it spans the full viewport width */
+  left: 0;
+  position: relative; /* Needed because you used left/position on other sections */
+}
+
+.projects-inner {
+  max-width: 1200px; /* Keep inner content within a readable width */
+  margin: 0 auto; /* Center the inner container */
+}
+
+.projects h2 {
+  text-align: center; /* Center the section title */
+  margin-bottom: 3rem; /* Add space below the title */
+  font-size: 2.5rem; /* Consistent heading size */
+}
+
+.project-grid {
+  display: grid; /* Use CSS Grid for a responsive layout */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Create columns that fit, min 280px, max 1fr */
+  gap: 2rem; /* Add space between grid items (project cards) */
+}
+
+.project-card {
+  background: var(--white); /* White background for cards */
+  padding: 2rem; /* Add padding inside each card */
+  border-radius: 0.5rem; /* Rounded corners for cards */
+  text-align: left; /* Align text to the left (or center if preferred) */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Optional: Add a subtle shadow for depth */
+}
+
+.project-card h3 {
+    margin-bottom: 0.8rem; /* Space below the project title in the card */
+    font-size: 1.25rem;
+    color: var(--gray-800); /* Style heading color */
+}
+
+.project-card p {
+    color: var(--semi-dark-gray); /* Style paragraph color */
+}
+
+
+
+.footer {
+  background-color: var(--gray-800); /* Dark background */
+  color: var(--gray-100); /* Light text color */
+  padding: 4rem 2rem 2rem; /* Top, horizontal, and bottom padding */
+  font-size: 0.9rem;
+}
+
+.footer-content {
+  max-width: 1200px; /* Match max width of other sections */
+  margin: 0 auto; /* Center the footer content */
+  display: flex; /* Use flexbox for layout */
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  justify-content: space-between; /* Distribute space between sections */
+  gap: 2rem; /* Space between flex items */
+  margin-bottom: 2rem; /* Space above the copyright bar */
+}
+
+.footer-section {
+  flex: 1; /* Allow sections to grow */
+  min-width: 200px; /* Set a minimum width before wrapping */
+}
+
+.footer-section h4 {
+  color: var(--white); /* Starker color for headings */
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.footer-section p {
+  margin-bottom: 0.5rem; /* Space out paragraphs */
+}
+
+.social-links {
+  display: flex; /* Arrange social links horizontally */
+  gap: 1rem; /* Space between social links */
+}
+
+.social-links a {
+  color: var(--gray-100); /* Link color */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.social-links a:hover {
+  color: var(--primary-color); /* Highlight color on hover */
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--semi-dark-gray); /* Separator line */
+  font-size: 0.8rem;
+  color: var(--gray-100); /* Match text color */
+}
+
+
+
 @media (max-width: 768px) {
   .nav-links {
     display: none;
@@ -114,5 +257,42 @@ body {
   
   .hero p {
     font-size: 1rem;
+  }
+
+  .footer-content {
+    flex-direction: column; /* Stack sections vertically */
+    gap: 3rem; /* Increase gap when stacked */
+  }
+
+  .footer-section {
+      flex: unset; /* Reset flex-grow */
+      min-width: unset; /* Reset min-width */
+  }
+
+  .footer-section h4 {
+    margin-bottom: 0.8rem;
+  }
+
+  .footer-section p {
+    margin-bottom: 0.4rem;
+  }
+
+  .social-links {
+    justify-content: flex-start; /* Align social links to the start */
+  }
+
+
+  .projects h2 {
+    font-size: 2rem; /* Adjust heading size on smaller screens */
+    margin-bottom: 2rem;
+  }
+
+  .project-grid {
+    /* The auto-fit/minmax works well, but you could adjust gap or minmax if desired here */
+    gap: 1.5rem; /* Slightly smaller gap on smaller screens */
+  }
+
+  .project-card {
+    padding: 1.5rem; /* Slightly less padding on smaller cards */
   }
 }
