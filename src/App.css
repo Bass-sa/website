@@ -132,6 +132,15 @@ nav {
   color: var(--text-color); /* Style your logo text */
 }
 
+.logo-image {
+  width: 16px; /* Set a fixed width for the logo image */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 0.5rem;
+  margin-right: 0.5rem; /* Space between image and text */
+  vertical-align: middle; /* Align with text if needed */
+  image-rendering: pixelated; /* Ensures the logo image appears pixelated */
+}
+
 .nav-links {
   list-style: none; /* Remove bullet points from the list */
   display: flex; /* Arrange list items horizontally */
