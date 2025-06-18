@@ -28,7 +28,7 @@ function App() {
           <h2>💡 Our Innovation Pipeline</h2> {/* Changed title */}
           {/* Optional intro text */}
           <p>We are in the ideation phase, actively exploring and developing concepts that leverage cutting-edge technologies to solve real-world business problems.</p> 
-          
+          <br></br>
           <div className="project-grid"> {/* These cards now represent areas of focus/exploration */}
             <div className="project-card">
               <h3>Intelligent Automation (AI & ML)</h3> {/* Changed title */}
@@ -51,7 +51,7 @@ function App() {
           <h2>🤝 Partnering for Future Success</h2> {/* Changed title */}
            {/* Optional intro text */}
           <p>We are seeking forward-thinking businesses ready to collaborate on developing innovative automation solutions that address their specific challenges and drive future growth.</p>
-
+          <br></br>
           <div className="customer-grid"> {/* These cards now represent types of partners/challenges */}
             <div className="customer-card">
               <h3>Efficiency Seekers</h3> {/* Changed title */}
