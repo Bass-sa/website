@@ -25,7 +25,7 @@ function App() {
 
       <section id="projects" className="projects"> {/* Renamed section slightly conceptually */}
         <div className="projects-inner">
-          <h2>Our Innovation Pipeline</h2> {/* Changed title */}
+          <h2>💡 Our Innovation Pipeline</h2> {/* Changed title */}
           {/* Optional intro text */}
           <p>We are in the ideation phase, actively exploring and developing concepts that leverage cutting-edge technologies to solve real-world business problems.</p> 
           
@@ -48,7 +48,7 @@ function App() {
 
       <section id="customers" className="customers"> {/* Renamed section slightly conceptually */}
         <div className="customers-inner">
-          <h2>Partnering for Future Success</h2> {/* Changed title */}
+          <h2>🤝 Partnering for Future Success</h2> {/* Changed title */}
            {/* Optional intro text */}
           <p>We are seeking forward-thinking businesses ready to collaborate on developing innovative automation solutions that address their specific challenges and drive future growth.</p>
 
