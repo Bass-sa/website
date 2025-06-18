@@ -5,7 +5,7 @@ function App() {
     <div className="app">
       <header className="header">
         <nav>
-          <div className="logo">Bass</div>
+          <div className="logo">BASS</div>
           <ul className="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#projects">Projects</a></li>
@@ -18,7 +18,7 @@ function App() {
       <section id="home" className="hero">
         <div className="hero-content">
           <h1>Innovating Automation for the Future of Business</h1>
-          <p>Byte Automation Solutions Studio (Bass) is dedicated to creating intelligent, B2B automation solutions by creatively applying emerging technologies like AI, Machine Learning, Robotics, and beyond.</p>
+          <p>Byte Automation Solutions Studio (BASS) is dedicated to creating intelligent, B2B automation solutions by creatively applying emerging technologies like AI, Machine Learning, Robotics, and beyond.</p>
           <button className="cta-button">Discover Our Approach</button> {/* Changed text */}
         </div>
       </section>
@@ -91,7 +91,7 @@ function App() {
           </div>
         </div>
         <div className="footer-bottom">
-          <p>&copy; 2025 Bass. All rights reserved.</p>
+          <p>&copy; 2025 BASS. All rights reserved.</p>
         </div>
       </footer>
     </div>
