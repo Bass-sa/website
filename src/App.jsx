@@ -1,11 +1,15 @@
 import './App.css'
+import logo from './assets/logo.png'; 
 
 function App() {
   return (
     <div className="app">
       <header className="header">
         <nav>
-          <div className="logo">BASS</div>
+          <div className="logo">
+          <img src={logo} alt="BASS Logo" className="logo-image" /> 
+            BASS
+          </div>
           <ul className="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#projects">Projects</a></li>
