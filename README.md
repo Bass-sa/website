@@ -11,7 +11,7 @@ Fish on a tank website.
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/Zyd7x/website.git
+git clone https://github.com/Bass-sa/website.git
 cd website
 ```
 
