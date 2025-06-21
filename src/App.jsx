@@ -77,8 +77,8 @@ function App() {
         <div className="footer-content">
           <div className="footer-section" id="contact">
             <h4>Contact Us</h4>
-            <p>Email: contact@bass.sa</p>
-            <p>Phone: (057) 061-1532</p>
+            <p>Email: <a href="mailto:contact@bass.sa">contact@bass.sa</a></p>
+            <p>Phone: <a href="callto:+96657-061-1532">+966 0570611532</a></p>
           </div>
           <div className="footer-section">
             <h4>Follow Us</h4>
