@@ -133,8 +133,8 @@ nav {
 }
 
 .logo-image {
-  width: 16px; /* Set a fixed width for the logo image */
-  height: auto; /* Maintain aspect ratio */
+  height: 24px; /* Set a fixed width for the logo image */
+  width: auto; /* Maintain aspect ratio */
   margin-bottom: 0.5rem;
   margin-right: 0.5rem; /* Space between image and text */
   vertical-align: middle; /* Align with text if needed */
